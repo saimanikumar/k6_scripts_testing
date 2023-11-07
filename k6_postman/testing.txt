@@ -1,0 +1,13 @@
+#### load test ###
+
+## four major types of load testing  ##
+
+stress testing - is used to limit limits of testing 
+
+load testing for performance
+
+spike testing
+
+soak testing
+
+npx @apideck/postman-to-k6 api_kanban_postman_collection.json -o k6-script.js 

@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "1f99bbaa-b11c-481d-a7eb-05ca7ac5a7d5",
+		"name": "api_kanban",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23289083"
+	},
+	
+	"item": [
+		{
+			"name": "user_api",
+			"item": [
+				{
+					"name": "get_user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication_token",
+								"value": "WyJjNTA3OWYzYWJkMjg0NTM4YWJiMDQxOTExMzhmYzNiNCJd.Y76bWQ.hai-hLa7DwPVX84rPlMNxVL31_g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login/include_auth_token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"smk@gmail.com\",\r\n  \"password\":\"1212\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/login?include_auth_token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "include_auth_token",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "list_api",
+			"item": [
+				{
+					"name": "get_list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication_token",
+								"value": "WyJjNTA3OWYzYWJkMjg0NTM4YWJiMDQxOTExMzhmYzNiNCJd.Y76bWQ.hai-hLa7DwPVX84rPlMNxVL31_g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/list?list_id=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"list"
+							],
+							"query": [
+								{
+									"key": "list_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication_token",
+								"value": " WyJjNTA3OWYzYWJkMjg0NTM4YWJiMDQxOTExMzhmYzNiNCJd.Y76jgQ.RsQSfW1shs9GuroOXSQnlYsv3mA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/list?list_name=cv&description=vc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"list"
+							],
+							"query": [
+								{
+									"key": "list_name",
+									"value": "cv"
+								},
+								{
+									"key": "description",
+									"value": "vc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "card_api",
+			"item": [
+				{
+					"name": "get_card",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication_token",
+								"value": " WyJjNTA3OWYzYWJkMjg0NTM4YWJiMDQxOTExMzhmYzNiNCJd.Y76jgQ.RsQSfW1shs9GuroOXSQnlYsv3mA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/card?card_id=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card"
+							],
+							"query": [
+								{
+									"key": "card_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication_token",
+								"value": " WyJjNTA3OWYzYWJkMjg0NTM4YWJiMDQxOTExMzhmYzNiNCJd.Y76jgQ.RsQSfW1shs9GuroOXSQnlYsv3mA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/card?card_title=unit5&content=transactions&deadline=2023-04-01&percent=25&list_id=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card"
+							],
+							"query": [
+								{
+									"key": "card_title",
+									"value": "unit5"
+								},
+								{
+									"key": "content",
+									"value": "transactions"
+								},
+								{
+									"key": "deadline",
+									"value": "2023-04-01"
+								},
+								{
+									"key": "percent",
+									"value": "25"
+								},
+								{
+									"key": "list_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "summary",
+			"item": [
+				{
+					"name": "task_check",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

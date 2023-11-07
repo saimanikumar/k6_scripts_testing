@@ -1,5 +1,4 @@
 # k6_scripts_testing
-# Project Name
 
 This project contains information and scripts related to k6 load testing and other topics.
 
